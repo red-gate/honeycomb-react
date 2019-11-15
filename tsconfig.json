@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "es6",
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "strict": true,
+        "target": "es5",
+    },
+    "include": [
+        "src/**/*",
+    ],
+}

@@ -9,5 +9,8 @@
   "bugs": {
     "url": "https://github.com/red-gate/honeycomb-react/issues"
   },
-  "homepage": "https://github.com/red-gate/honeycomb-react#readme"
+  "homepage": "https://github.com/red-gate/honeycomb-react#readme",
+  "devDependencies": {
+    "typescript": "3.7.2"
+  }
 }
