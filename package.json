@@ -1,0 +1,13 @@
+{
+  "name": "@redgate/honeycomb-react",
+  "version": "0.0.1",
+  "description": "React reference implementation of the Redgate Honeycomb design system.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-gate/honeycomb-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/red-gate/honeycomb-react/issues"
+  },
+  "homepage": "https://github.com/red-gate/honeycomb-react#readme"
+}
