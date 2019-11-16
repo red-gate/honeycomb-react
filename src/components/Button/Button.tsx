@@ -1,21 +1,24 @@
-import * as classnames from 'classnames';
-import * as React from 'react';
+import classnames from 'classnames';
+import React, { FunctionComponent, MouseEvent, ReactElement, ReactNode } from 'react';
 
 export interface ButtonProps {
     readonly className?: string;
-    readonly text: string;
+    readonly children: ReactNode;
+    readonly onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
 /**
  * @description
  * General purpose Honeycomb button.
  *
- * As it stands there is currently no use case in the design system to require
- * the need to pass in children, e.g. having a spinny inside the button.
+ * Children prop is required as such it can be used for even simplle use cases where
+ * only a text label is specified by a consumer.
  */
-export const Button: React.FunctionComponent<ButtonProps> = ({ className, text }) => (
+export const Button: FunctionComponent<ButtonProps> = ({ children, className, onClick }): ReactElement => (
 
-    <button className={classnames('button', className)}>
-        {text}
+    <button className={classnames('button', className)}
+            onClick={onClick}>
+
+        {children}
     </button>
 );
