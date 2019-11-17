@@ -11,8 +11,11 @@ export interface ButtonProps {
  * @description
  * General purpose Honeycomb button.
  *
- * Children prop is required as such it can be used for even simplle use cases where
- * only a text label is specified by a consumer.
+ * Children prop is required; as such it can be used for even simple
+ * use-cases - e.g. where only a text label is specified by a consumer.
+ *
+ * TODO: properly flesh-out this component, ATM it is just a demo
+ * component for test/build setup.
  */
 export const Button: FunctionComponent<ButtonProps> = ({ children, className, onClick }): ReactElement => (
 
